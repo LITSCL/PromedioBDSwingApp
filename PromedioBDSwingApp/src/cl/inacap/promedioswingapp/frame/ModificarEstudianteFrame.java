@@ -84,7 +84,7 @@ public class ModificarEstudianteFrame extends JInternalFrame {
 				Estudiante estudianteSeleccionado = estudiantesIngresados.get(listEstudiantes.getSelectedIndex()); //Se obtiene el objeto de la lista utilizando el indice de lo que el usuario selecciono en el JList y se almacena en una variable.
 				if (comboBoxModificar.getSelectedItem().equals("Nota 1")) { //Si el valor del JComboBox es igual a Patente, entonces ejecuta dicho código.
 					if (textFieldModificar.getText().equals("")) {
-						JOptionPane.showMessageDialog(null,"- No hay nada escrito en el JTextField","Error de validación",JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
+						JOptionPane.showMessageDialog(null,"- No hay nada escrito en el JTextField", "Error de validación",JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
 					}
 					else {
 						try {
@@ -98,13 +98,13 @@ public class ModificarEstudianteFrame extends JInternalFrame {
 								daoEstudiante.update(estudianteSeleccionado); //Aca se selecciona el objeto y se manda a actualizar.
 							}
 						} catch (Exception ex) {
-							JOptionPane.showMessageDialog(null,"- El valor que ingres� no es válido","Error de validaci�n",JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
+							JOptionPane.showMessageDialog(null,"- El valor que ingresó no es válido", "Error de validación",JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
 						}
 					}
 				}
 				if (comboBoxModificar.getSelectedItem().equals("Nota 2")) { //Si el valor del JComboBox es igual a Patente, entonces ejecuta dicho código.
 					if (textFieldModificar.getText().equals("")) {
-						JOptionPane.showMessageDialog(null, "- No hay nada escrito en el JTextField","Error de validación", JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
+						JOptionPane.showMessageDialog(null, "- No hay nada escrito en el JTextField", "Error de validación", JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
 					}
 					else {
 						try {
@@ -122,7 +122,7 @@ public class ModificarEstudianteFrame extends JInternalFrame {
 						}
 					}
 				}
-				if (comboBoxModificar.getSelectedItem().equals("Nota 3")) { //Si el valor del JComboBox es igual a Patente, entonces ejecuta dicho c�digo.
+				if (comboBoxModificar.getSelectedItem().equals("Nota 3")) { //Si el valor del JComboBox es igual a Patente, entonces ejecuta dicho código.
 					if (textFieldModificar.getText().equals("")) {
 						JOptionPane.showMessageDialog(null, "- No hay nada escrito en el JTextField", "Error de validación", JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
 					}
@@ -144,7 +144,7 @@ public class ModificarEstudianteFrame extends JInternalFrame {
 				}
 				if (comboBoxModificar.getSelectedItem().equals("Nota 4")) { //Si el valor del JComboBox es igual a Patente, entonces ejecuta dicho código.
 					if (textFieldModificar.getText().equals("")) {
-						JOptionPane.showMessageDialog(null, "- No hay nada escrito en el JTextField","Error de validación", JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
+						JOptionPane.showMessageDialog(null, "- No hay nada escrito en el JTextField", "Error de validación", JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
 					}
 					else {
 						try {

@@ -38,7 +38,7 @@ public class EstudianteDAO {
 			System.out.println("Ejecución del SQL: " + resultado);
 			//4. Desconectarse.
 		} finally { //Esta instrucción se ejecuta se caiga o no el programa.
-			bdUtils.desconectar(); //Envia la petici�n de desconexión al dbms.
+			bdUtils.desconectar(); //Envia la petición de desconexión al dbms.
 		}
 		return resultado;
 	}
@@ -83,7 +83,7 @@ public class EstudianteDAO {
 		return estudiantes;
 	}
 	
-	//Metodo que trae objetos seg�n un filtro de la tabla automoviles que se encuentra en la base de datos.
+	//Metodo que trae objetos según un filtro de la tabla automoviles que se encuentra en la base de datos.
 	public List<Estudiante> filtrarEstudiante(String filtro) {
 		//Todos los métodos que se conecten a una base de datos deben seguir los 4 siguientes pasos:
 		boolean resultado;
@@ -177,7 +177,7 @@ public class EstudianteDAO {
 			resultado = false;
 			System.out.println("Ejecución del SQL: " + resultado);
 			//4. Desconectarse.
-		}finally { //Esta instrucción se ejecuta, caiga o no el programa.
+		} finally { //Esta instrucción se ejecuta, caiga o no el programa.
 			bdUtils.desconectar(); //Envia la petición de desconexión al dbms.
 		}
 	}

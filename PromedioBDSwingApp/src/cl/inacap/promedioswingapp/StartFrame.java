@@ -64,9 +64,9 @@ public class StartFrame extends JFrame {
 		mnOpciones.add(mntmModificarEstudiantes);
 		
 		//Creación del JMenuItem (Eliminar Estudiante).
-				JMenuItem mntmEliminarEstudiante = new JMenuItem("Eliminar Estudiante"); //Aca se crea el JMenuItem llamado (Eliminar Estudiante).
-				mntmEliminarEstudiante.addActionListener(e -> showFrameEliminarEstudiante(e)); //Aca se añade el Listener del JmenuItem llamado (Eliminar Estudiante) el cual llama al método llamado showFrameEliminarEstudiante().
-				mnOpciones.add(mntmEliminarEstudiante);
+		JMenuItem mntmEliminarEstudiante = new JMenuItem("Eliminar Estudiante"); //Aca se crea el JMenuItem llamado (Eliminar Estudiante).
+		mntmEliminarEstudiante.addActionListener(e -> showFrameEliminarEstudiante(e)); //Aca se añade el Listener del JmenuItem llamado (Eliminar Estudiante) el cual llama al método llamado showFrameEliminarEstudiante().
+		mnOpciones.add(mntmEliminarEstudiante);
 		
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -80,7 +80,7 @@ public class StartFrame extends JFrame {
 	//Codigo a ejecutar del Listener del componente JMenuItem llamado (Modificar Estudiante).
 	private void showFrameModificarEstudiantes(ActionEvent e) {
 		if (this.modificarEstudianteFrame != null) { //Verifica si el usuario ya habia abierto el frame antes (Esta es la variable que está arriba como atributo).
-			desktopPane.remove(this.modificarEstudianteFrame); //Esta instrucci�n elimina el frame existente si el usuario ya lo tenia abierto (Se debe utilizar el objeto desktopPane porque es all� donde fue agregado el frame).
+			desktopPane.remove(this.modificarEstudianteFrame); //Esta instrucción elimina el frame existente si el usuario ya lo tenia abierto (Se debe utilizar el objeto desktopPane porque es allí donde fue agregado el frame).
 		}
 		this.modificarEstudianteFrame = new ModificarEstudianteFrame(); //Proceso de creación del nuevo frame (Ya que el anterior se borr+o).
 		desktopPane.add(this.modificarEstudianteFrame); //Agregar el frame creado al desktopPane (Se debe utilizar el objeto desktopPane porque es allá donde fue agregado el frame).
@@ -89,7 +89,7 @@ public class StartFrame extends JFrame {
 
 	//Codigo a ejecutar del Listener del componente JMenuItem llamado (Ingresar Estudiante).
 	private void showFrameIngresarEstudiante(ActionEvent e) { //Aqui se muestra el frame de ingresar.
-		if (this.ingresarEstudianteFrame != null) { //Verifica si el usuario ya habia abierto el frame antes (Esta es la variable que est� arriba como atributo).
+		if (this.ingresarEstudianteFrame != null) { //Verifica si el usuario ya habia abierto el frame antes (Esta es la variable que está arriba como atributo).
 			desktopPane.remove(this.ingresarEstudianteFrame); //Esta instrucción elimina el frame existente si el usuario ya lo tenia abierto (Se debe utilizar el objeto desktopPane porque es allá donde fue agregado el frame).
 		}
 		this.ingresarEstudianteFrame = new IngresarEstudianteFrame(); //Proceso de creación del nuevo frame (Ya que el anterior se borró).

@@ -44,7 +44,7 @@ public class IngresarEstudianteFrame extends JInternalFrame { //Esta clase hered
 						"Matemática Aplicada"			
 				};
 				
-				//Proceso de agregaci�n de items al JComboBox.
+				//Proceso de agregación de items al JComboBox.
 				for(String i : asignaturas) { //Aca se recorre el Array llamado asignaturas.
 					comboBoxAsignatura.addItem(i); //Aca se agregan los items al JComboBox.
 				}
@@ -81,7 +81,7 @@ public class IngresarEstudianteFrame extends JInternalFrame { //Esta clase hered
 		getContentPane().add(lblNewLabel_5);
 		
 		JButton btnAgregar = new JButton("Agregar");
-		btnAgregar.addActionListener(e -> ingresarEstudiante(e)); //Aca se añaade el Listener del JButton llamado (Agregar) el cual llama al método llamado ingresarEstudiante().
+		btnAgregar.addActionListener(e -> ingresarEstudiante(e)); //Aca se añade el Listener del JButton llamado (Agregar) el cual llama al método llamado ingresarEstudiante().
 		btnAgregar.setBounds(295, 197, 89, 23);
 		getContentPane().add(btnAgregar);
 		
@@ -118,7 +118,7 @@ public class IngresarEstudianteFrame extends JInternalFrame { //Esta clase hered
 	
 	//Código a ejecutar del Listener del componente JButton llamado (Agregar).
 	private void ingresarEstudiante(ActionEvent e) {
-		List<String> errores = new ArrayList<String>(); //Aca se crea una lista, la cual almacenar� todos los posible errores cometidos por el usuario.
+		List<String> errores = new ArrayList<String>(); //Aca se crea una lista, la cual almacenará todos los posible errores cometidos por el usuario.
 		String nombre = this.textFieldNombre.getText().trim(); //Aca se almacena lo que el usuario ingresa en el componente, similar a un Scanner.
 		if (nombre.isEmpty() == true) {
 			errores.add("- Tiene que ingresar un nombre");
@@ -180,7 +180,7 @@ public class IngresarEstudianteFrame extends JInternalFrame { //Esta clase hered
 			String asignaturaSeleccionada = (String)this.comboBoxAsignatura.getSelectedItem(); //Tiene que refundirse el dato a tipo String porque el atributo del JComboBox lo declaramos como String.
 			es.setAsignatura(asignaturaSeleccionada);
 			
-			new EstudianteDAO().save(es); //Solo utilizar esta manera de agregar objetos al dao si solo un bot�n en todo el programa va a añadir los objetos, en caso contrario crear un objeto estatico y en esta linea llama a la instancia.
+			new EstudianteDAO().save(es); //Solo utilizar esta manera de agregar objetos al dao si solo un botón en todo el programa va a añadir los objetos, en caso contrario crear un objeto estatico y en esta linea llama a la instancia.
 			
 			JOptionPane.showMessageDialog(null, "Estudiante ingresado"); //Esta instrucción muestra un mensaje cuando el estudiante es ingresado.
 			this.dispose(); //Esta instrucción cierra la ventana (JInternal Frame llamado (Ingresar Estudiante)).

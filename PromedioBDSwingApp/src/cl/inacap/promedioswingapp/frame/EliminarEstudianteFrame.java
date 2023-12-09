@@ -67,7 +67,7 @@ public class EliminarEstudianteFrame extends JInternalFrame {
 		
 		if (respuesta == JOptionPane.YES_OPTION) { //Aca se consulta si la variable respuesta es igual a 1 (En otras palabras si el usuario dio click a "YES" en el botón de la ventana).
 			Estudiante eliminado = (Estudiante)comboBoxSelecionarEstudianteEliminar.getSelectedItem(); //la variable eliminada almacena lo que está seleccionado en el JCombobox (Se esta haciendo down casting sinonimo de refundición de dato).
-			daoEstudiante.delete(eliminado); //Aca se elimina de la lista el estudiante que est� seleccionado en el JCombobox.
+			daoEstudiante.delete(eliminado); //Aca se elimina de la lista el estudiante que está seleccionado en el JCombobox.
 			JOptionPane.showMessageDialog(null, "Estudiante Eliminado"); //Aca se muestra el mensaje cuando se elimina un estudiante.
 			this.dispose(); //Esta instrucción cierra la ventana (JInternal Frame llamado (Eliminar Estudiante)).
 		}
