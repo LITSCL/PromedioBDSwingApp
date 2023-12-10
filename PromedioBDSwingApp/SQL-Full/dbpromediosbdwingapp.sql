@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-01-2020 a las 03:06:07
--- Versión del servidor: 10.4.8-MariaDB
--- Versión de PHP: 7.1.33
+-- Tiempo de generación: 10-12-2023 a las 19:17:41
+-- Versión del servidor: 10.4.17-MariaDB
+-- Versión de PHP: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,8 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `dbpromediosbdwingapp`
+-- Base de datos: `dbpromediobdswingapp`
 --
+CREATE DATABASE IF NOT EXISTS `dbpromediobdswingapp` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `dbpromediobdswingapp`;
 
 -- --------------------------------------------------------
 
