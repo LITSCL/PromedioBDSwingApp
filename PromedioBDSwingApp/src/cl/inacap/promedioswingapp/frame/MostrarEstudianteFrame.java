@@ -20,7 +20,7 @@ public class MostrarEstudianteFrame extends JInternalFrame { //Esta clase hereda
 	private JComboBox<String> comboBoxFiltrarEstudiantes; //En esta variable se almacena el valor del JComboBox.
 	private JButton btnFiltrar;
 
-	//Proceso de creaci�n del frame.
+	//Proceso de creación del frame.
 	public MostrarEstudianteFrame() { //Este es el frame que se muestra cuando se escucha el JMenuItem llamado (Mostrar Estudiante).
 		setTitle("Mostrar Estudiantes"); //Es es el titulo del frame, se muestra al lado del icono cuando se ejecuta el programa. 
 		//Todo este código se ejecuta antes de que se abra el JInternalFrame (Momento ideal para cargar el JComboBox).
@@ -70,7 +70,7 @@ public class MostrarEstudianteFrame extends JInternalFrame { //Esta clase hereda
 		
 		String seleccion = (String)this.comboBoxFiltrarEstudiantes.getSelectedItem(); //En esta variable se almacena el valor del JComboBox.
 		
-		//1. Proceso de creaci�n del TableModel.
+		//1. Proceso de creación del TableModel.
 		DefaultTableModel mo = new DefaultTableModel(); //Este es el modelo donde van a ir las filas y columnas.
 		
 		//2. Proceso de llenado de columnas.

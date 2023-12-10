@@ -35,13 +35,13 @@ public class IngresarEstudianteFrame extends JInternalFrame { //Esta clase hered
 		addInternalFrameListener(new InternalFrameAdapter() {
 			@Override
 			public void internalFrameOpened(InternalFrameEvent arg0) { //Aca se crea el listener del JComboBox llamado (Asignautras).
-				String [] asignaturas = { //Este Array se puede reemplazar por un DAO.
-						"Programación Orientada a Objetos",
-						"Programación de Componentes Web",
-						"Desarrollo de Aplicaciones Web",
-						"Analisis y Diseño Orientado a Objeto",
-						"Inglés",
-						"Matemática Aplicada"			
+				String[] asignaturas = { //Este Array se puede reemplazar por un DAO.
+					"Programación Orientada a Objetos",
+					"Programación de Componentes Web",
+					"Desarrollo de Aplicaciones Web",
+					"Analisis y Diseño Orientado a Objeto",
+					"Inglés",
+					"Matemática Aplicada"			
 				};
 				
 				//Proceso de agregación de items al JComboBox.
