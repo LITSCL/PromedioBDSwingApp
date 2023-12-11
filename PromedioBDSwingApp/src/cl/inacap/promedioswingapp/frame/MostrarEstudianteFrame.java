@@ -27,7 +27,6 @@ public class MostrarEstudianteFrame extends JInternalFrame { //Esta clase hereda
 		addInternalFrameListener(new InternalFrameAdapter() {
 			@Override
 			public void internalFrameOpened(InternalFrameEvent arg0) {
-				
 				List<Estudiante> estudiantesIngresados = new EstudianteDAO().getAll(); //En esta lista se almacenan todos los estudiantes ingresados.
 				
 				if (estudiantesIngresados.isEmpty() == true) { //Aca se revisa si hay estudiantes en la lista, de no ser así se ejecuta el código.

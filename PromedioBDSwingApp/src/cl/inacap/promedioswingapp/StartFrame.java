@@ -15,7 +15,6 @@ import java.awt.event.ActionEvent;
 import cl.inacap.promedioswingapp.frame.*;
 
 public class StartFrame extends JFrame {
-
 	private JPanel contentPane;
 	private IngresarEstudianteFrame ingresarEstudianteFrame; //Relación de tipo HAS-A (Porque el JFrame tiene JInternalFrame).
 	private MostrarEstudianteFrame mostrarEstudianteFrame; //Relación de tipo HAS-A (Porque el JFrame tiene JInternalFrame).
@@ -108,12 +107,12 @@ public class StartFrame extends JFrame {
 	}
 	
 	//Codigo a ejecutar del Listener del componente JMenuItem llamado (Eliminar Estudiante).
-		private void showFrameEliminarEstudiante(ActionEvent e) { //Aqui se muestra el frame de ingresar.
-			if (this.eliminarEstudianteFrame != null) { //Verifica si el usuario ya habia abierto el frame antes (Esta es la variable que está arriba como atributo).
-				desktopPane.remove(this.eliminarEstudianteFrame); //Esta instrucción elimina el frame existente si el usuario ya lo tenia abierto (Se debe utilizar el objeto desktopPane porque es allá donde fue agregado el frame).
-			}
-			this.eliminarEstudianteFrame = new EliminarEstudianteFrame(); //Proceso de creación del nuevo frame (Ya que el anterior se borró).
-			desktopPane.add(this.eliminarEstudianteFrame); //Agregar el frame creado al desktopPane (Se debe utilizar el objeto desktopPane porque es allá donde fue agregado el frame).
-			this.eliminarEstudianteFrame.setVisible(true); //Hacer visible el nuevo frame.
+	private void showFrameEliminarEstudiante(ActionEvent e) { //Aqui se muestra el frame de ingresar.
+		if (this.eliminarEstudianteFrame != null) { //Verifica si el usuario ya habia abierto el frame antes (Esta es la variable que está arriba como atributo).
+			desktopPane.remove(this.eliminarEstudianteFrame); //Esta instrucción elimina el frame existente si el usuario ya lo tenia abierto (Se debe utilizar el objeto desktopPane porque es allá donde fue agregado el frame).
 		}
+		this.eliminarEstudianteFrame = new EliminarEstudianteFrame(); //Proceso de creación del nuevo frame (Ya que el anterior se borró).
+		desktopPane.add(this.eliminarEstudianteFrame); //Agregar el frame creado al desktopPane (Se debe utilizar el objeto desktopPane porque es allá donde fue agregado el frame).
+		this.eliminarEstudianteFrame.setVisible(true); //Hacer visible el nuevo frame.
+	}
 }

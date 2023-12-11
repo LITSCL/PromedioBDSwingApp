@@ -62,6 +62,7 @@ public class EliminarEstudianteFrame extends JInternalFrame {
 		getContentPane().add(btnEliminar);
 
 	}
+
 	private void eliminarEstudiante() {
 		int respuesta = JOptionPane.showConfirmDialog(null, "¿Seguro que desea eliminar el estudiante?","Eliminar Estudiante", JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE); //El primer parámetro indica el mensaje de la ventana, el segundo parámetro indica el nombre de la ventana, el tercer parámetro indica el tipo de opción y el cuarto parámetro indica el icono del tipo de mensaje (Esta instrucción retorna un dato de tipo int (0=Si/1=No)).
 		
@@ -71,6 +72,5 @@ public class EliminarEstudianteFrame extends JInternalFrame {
 			JOptionPane.showMessageDialog(null, "Estudiante Eliminado"); //Aca se muestra el mensaje cuando se elimina un estudiante.
 			this.dispose(); //Esta instrucción cierra la ventana (JInternal Frame llamado (Eliminar Estudiante)).
 		}
-		
 	}
 }
