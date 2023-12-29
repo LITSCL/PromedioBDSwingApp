@@ -13,7 +13,7 @@ public class EstudianteDAO {
 	
 	//Método que añaade objetos de tipo Estudiante a la tabla automoviles que se encuentra en la base de datos.
 	public boolean save(Estudiante e) { //Este método inserta el estudiante a la base de datos.
-		// Todos los métodos que se conecten a una base de datos deben seguir los 4 siguientes pasos:
+		//Todos los métodos que se conecten a una base de datos deben seguir los 4 siguientes pasos:
 		boolean resultado;
 		try {
 			//1. Conectarse a la base de datos.
@@ -45,7 +45,7 @@ public class EstudianteDAO {
 	
 	//Método que trae todos los objetos de la tabla llamada automoviles que se encuentra en la base de datos.
 	public List<Estudiante> getAll() {
-		// Todos los métodos que se conecten a una base de datos deben seguir los 4 siguientes pasos:
+		//Todos los métodos que se conecten a una base de datos deben seguir los 4 siguientes pasos:
 		boolean resultado;
 		List<Estudiante> estudiantes = new ArrayList<>(); //La lista ya no debe estar arriba estatica ya que el contenido va a variar.
 		try {
@@ -126,7 +126,7 @@ public class EstudianteDAO {
 	}
 	
 	public void update(Estudiante e) {
-		// Todos los métodos que se conecten a una base de datos deben seguir los 4 siguientes pasos:
+		//Todos los métodos que se conecten a una base de datos deben seguir los 4 siguientes pasos:
 		boolean resultado;
 		try {
 			//1. Conectarse a la base de datos.
@@ -159,7 +159,7 @@ public class EstudianteDAO {
 	
 	//Método que Elimina objetos de la tabla automoviles que se encuentra en la base de datos.
 	public void delete(Estudiante e) {
-		// Todos los métodos que se conecten a una base de datos deben seguir los 4 siguientes pasos:
+		//Todos los métodos que se conecten a una base de datos deben seguir los 4 siguientes pasos:
 		boolean resultado;
 		try {
 			//1. Conectarse a la base de datos.

@@ -77,46 +77,41 @@ public class MostrarEstudianteFrame extends JInternalFrame { //Esta clase hereda
 		mo.addColumn("Asignatura"); //Se añade una columna llamada (Asignatura).
 		mo.addColumn("Promedio"); //Se añade una columna llamada (Promedio).
 		
-		//3. Proceso de traer la lista y de agregado de filas.
+		//3. Proceso de traer la lista y de agregado de filas.	
+		if ("Promedio menor que 4.0".equals(seleccion)) { //Si el promedio es menor que 4 y la cedena coincide con lo que seleccionó el usuario, el código se ejecuta.
+			List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante("<4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
 			
-			if ("Promedio menor que 4.0".equals(seleccion)) { //Si el promedio es menor que 4 y la cedena coincide con lo que seleccionó el usuario, el código se ejecuta.
-				List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante("<4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
-				
-				for(Estudiante es : estudiantesFiltrados) {
-
-					Object[] fila = new Object[3];
-					fila[0] = es.getNombre();
-					fila[1] = es.getAsignatura();
-					fila[2] = es.getPromedio();
-					mo.addRow(fila);
-				}
-				
+			for (Estudiante es : estudiantesFiltrados) {
+				Object[] fila = new Object[3];
+				fila[0] = es.getNombre();
+				fila[1] = es.getAsignatura();
+				fila[2] = es.getPromedio();
+				mo.addRow(fila);
 			}
-			else if ("Promedio igual a 4.0".equals(seleccion)) {
-				List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante("=4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
-				
-				for (Estudiante es : estudiantesFiltrados) {
-
-					Object[] fila = new Object[3];
-					fila[0] = es.getNombre();
-					fila[1] = es.getAsignatura();
-					fila[2] = es.getPromedio();
-					mo.addRow(fila);
-				}
-				
-			} else if("Promedio mayor que 4.0".equals(seleccion)) {
-				List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante(">4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
 			
-				for (Estudiante es : estudiantesFiltrados) {
-
-					Object[] fila = new Object[3];
-					fila[0] = es.getNombre();
-					fila[1] = es.getAsignatura();
-					fila[2] = es.getPromedio();
-					mo.addRow(fila);
-				}
+		}
+		else if ("Promedio igual a 4.0".equals(seleccion)) {
+			List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante("=4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
 			
+			for (Estudiante es : estudiantesFiltrados) {
+				Object[] fila = new Object[3];
+				fila[0] = es.getNombre();
+				fila[1] = es.getAsignatura();
+				fila[2] = es.getPromedio();
+				mo.addRow(fila);
 			}
+			
+		} else if("Promedio mayor que 4.0".equals(seleccion)) {
+			List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante(">4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
+		
+			for (Estudiante es : estudiantesFiltrados) {
+				Object[] fila = new Object[3];
+				fila[0] = es.getNombre();
+				fila[1] = es.getAsignatura();
+				fila[2] = es.getPromedio();
+				mo.addRow(fila);
+			}
+		}
 		
 		//4. Proceso de definir en la tabla el TableModel.
 		tableMostrarEstudiante.setModel(mo);
