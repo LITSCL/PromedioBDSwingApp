@@ -175,7 +175,7 @@ public class ModificarEstudianteFrame extends JInternalFrame {
 			if (textFieldModificar.getText().equals("")) {
 				JOptionPane.showMessageDialog(null, "- No hay nada escrito en el JTextField \n- No seleccionó ningún automóvil ", "Error de validación", JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
 			}
-			else{
+			else {
 				JOptionPane.showMessageDialog(null, "- No seleccionó ningún Estudiante", "Error de validación", JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
 			}
 		}	
