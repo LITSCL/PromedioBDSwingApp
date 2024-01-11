@@ -45,7 +45,7 @@ public class IngresarEstudianteFrame extends JInternalFrame { //Esta clase hered
 				};
 				
 				//Proceso de agregación de items al JComboBox.
-				for(String i : asignaturas) { //Aca se recorre el Array llamado asignaturas.
+				for (String i : asignaturas) { //Aca se recorre el Array llamado asignaturas.
 					comboBoxAsignatura.addItem(i); //Aca se agregan los items al JComboBox.
 				}
 			}
